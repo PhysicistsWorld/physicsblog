@@ -1,0 +1,26 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    
+  }
+
+.one {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
+    color :aqua
+  
+  }
+
+.two{
+    background-color: aqua
+
+  }
+
+  .sub_title1{
+    
+    background-color: cadetblue;
+}
