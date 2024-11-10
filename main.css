@@ -1,11 +1,97 @@
 
-.wrapper {
+/*.wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     
   }
+    */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 colonnes de taille égale */
+    grid-template-rows: repeat(5, 1fr);    /* 4 lignes de taille égale */
+    gap: 1px; /* Espace entre les cases */
+    width: 100%; /* Taille totale de la grille */
+    max-width: 1600px; /* Limite de la largeur */
+    margin: auto;
+    
+  }
+
+  .case {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    height: 100px; /* Taille fixe de chaque case */
+  }
+
+.case-1 { background-color: #FFDDC1;
+  justify-content: center; 
+  grid-column: 3;
+  grid-row: 1;
+  max-height: 100px;}
+.case-2 { background-color: #FFD1BA;  
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 2;}
+.case-3 { background-color: #FFABAB; 
+  grid-column: 4;
+  grid-row: 2;}
+.case-4 { background-color: #FFC3A0; 
+  grid-column: 3;
+  grid-row: 2;
+  text-align: center;}
+.case-5 { background-color: #FF677D; }
+.case-6 { background-color: #D4A5A5; }
+.case-7 { background-color: #392F5A; color: #fff; }
+.case-8 { background-color: #31A2AC; color: #fff; }
+.case-9 { background-color: #61C0BF; color: #fff; }
+.case-10 { background-color: #6B4226; color: #fff; }
+.case-11 { background-color: #D9BF77; }
+.case-12 { background-color: #ACD8AA; }
+.case-13 { background-color: #FFE156; }
+.case-14 { background-color: #5D737E; color: #fff; }
+.case-15 { background-color: #3C3C3C; color: #fff; }
+.case-16 { background-color: #D1D1D1; }
+
+
+/*grid for*/
+
+.case-title{
+  background-color: #FFDDC1;
+  justify-content: center; 
+  grid-column: 3;
+  grid-row: 1;
+  height: 100px;
+}
+
+.title{
+  font-weight: 500;
+  font-size:xx-large;
+}
+.subsection{
+  font-weight: 300;
+  font-size: x-large;
+  text-align: left;
+}
+
+.case-PPSUBTXT{
+  background-color: #FFC3A0; 
+  grid-column-start: 1; /* Commence à la 1ère colonne */
+  grid-column-end: 5;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  grid-row-start: 1;    /* Commence à la 1ère ligne */
+  grid-row-end: 3;      /* Finit à la 3ème ligne (occupe 2 lignes) */
+  text-align: center;
+  font-size: large;
+}
+
+
 
 .one {
     grid-column: 1;
