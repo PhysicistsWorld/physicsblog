@@ -8,6 +8,13 @@
   }
     */
 
+  
+  .body{
+    background-color: #31A2AC;
+    margin: 0;
+    padding: 0;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 4 colonnes de taille égale */
@@ -15,8 +22,7 @@
     gap: 1px; /* Espace entre les cases */
     width: 100%; /* Taille totale de la grille */
     max-width: 1600px; /* Limite de la largeur */
-    margin: auto;
-    
+    margin:0%;
   }
 
   .case {
@@ -38,11 +44,17 @@
   max-height: 100px;}
 .case-2 { background-color: #FFD1BA;  
   justify-content: center;
-  grid-column: 2;
-  grid-row: 2;}
+  text-align: center;
+  grid-column-start: 2; /* Commence à la 1ère colonne */
+  grid-column-end: 2;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  grid-row-start: 1;    /* Commence à la 1ère ligne */
+  grid-row-end: 3;  }
 .case-3 { background-color: #FFABAB; 
-  grid-column: 4;
-  grid-row: 2;}
+  text-align: center;
+  grid-column-start: 4; /* Commence à la 1ère colonne */
+  grid-column-end: 4;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  grid-row-start: 1;    /* Commence à la 1ère ligne */
+  grid-row-end: 3; }
 .case-4 { background-color: #FFC3A0; 
   grid-column: 3;
   grid-row: 2;
@@ -71,10 +83,49 @@
   height: 100px;
 }
 
+
 .title{
-  font-weight: 500;
   font-size:xx-large;
+  font-weight: bold;
+  color: #333;
+  justify-content: center; 
+  text-align: center;
+  grid-column-start: 2; /* Commence à la 1ère colonne */
+  grid-column-end: 4;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  grid-row-start: 1;    /* Commence à la 1ère ligne */
+  grid-row-end: 2;      /* Finit à la 3ème ligne (occupe 2 lignes) */
 }
+
+.main-title{
+  font-size:xx-large;
+  font-weight: bold;
+  color: #333;
+  justify-content: center; 
+  text-align: center;
+  
+  grid-row: 1;
+  grid-column-start: 2; /* Commence à la 1ère colonne */
+  grid-column-end: 5;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  /*grid-row-start: 1;    /* Commence à la 1ère ligne */
+  /*grid-row-end: 1;      /* Finit à la 3ème ligne (occupe 2 lignes) */
+}
+
+.subtitle{
+  font-weight: 300;
+  font-size: x-large;
+  text-align: center;
+}
+
+.main-image-1{
+  grid-column-start: 3; /* Commence à la 1ère colonne */
+  grid-column-end: 3;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  grid-row-start: 1;    /* Commence à la 1ère ligne */
+  grid-row-end: 3;      /* Finit à la 3ème ligne (occupe 2 lignes) */
+  width: 300 px;
+  height: 300 px;
+}
+
+
 .subsection{
   font-weight: 300;
   font-size: x-large;
@@ -82,7 +133,7 @@
 }
 
 .case-PPSUBTXT{
-  background-color: #FFC3A0; 
+  background-color: rgb(172, 144, 105); 
   grid-column-start: 1; /* Commence à la 1ère colonne */
   grid-column-end: 5;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
   grid-row-start: 1;    /* Commence à la 1ère ligne */
@@ -90,6 +141,20 @@
   text-align: center;
   font-size: large;
 }
+.case-pp-core{
+  text-align: left;
+}
+
+.important{
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+
+
+
+
 
 
 

@@ -11,34 +11,36 @@
     <div class="case-PPSUBTXT">
         <p class="title">Mécanique du point et équations horaires</p>
         <p class = "subsection">I) Le PFD</p>
-        On rappelle le principe fondamental de la dynamique (PDF), ou Seconde Loi de Newton, qui relie la variation de la quantité de mouvement aux forces (et qui s'applique dans un référentiel Galliléen !). 
-        
-        \( \sum \vec{F}= \frac{d}{dt}(\vec{p}) \)
-        <p>Dans de nombreux cas, la masse du système est constante. On peut alors simplifier cette équation et aboutir à:</p>
-        \( \sum \overrightarrow F = m \frac{d}{dt} \vec v = m \vec a \)
-
-    <p>
-        Le but est de calculer la trajectoire d'un point P. On le repère par ses coordonnées 
-        \[
-            P = \begin{pmatrix}
-            x(t) \\
-            y(t) \\
-            z(t)
-            \end{pmatrix}
+        <div class="case-pp-core">
+            On rappelle le principe fondamental de la dynamique (PDF), ou Seconde Loi de Newton, qui relie la variation de la quantité de mouvement aux forces (et qui s'applique dans un référentiel Galliléen !).
+            
+            \( \sum \vec{F}= \frac{d}{dt}(\vec{p}) \)
+            <p>Dans de nombreux cas, la masse du système est constante. On peut alors simplifier cette équation et aboutir à:</p>
+            \( \sum \overrightarrow F = m \frac{d}{dt} \vec v = m \vec a \)
+            
+                <p>
+            Le but est de calculer la trajectoire d'un point P. On le repère par ses coordonnées
+            \[
+                P = \begin{pmatrix}
+                x(t) \
+                y(t) \
+                z(t)
+                \end{pmatrix}
+                \]
+                </p>
+            
+                <p>La clée est de savoir relier le PDF au point P</p>
+                <p>
+            \[
+                \vec a = \begin{pmatrix}
+                \ddot{x}(t) \
+                \ddot{y}(t) \
+                \ddot{z}(t)
+                \end{pmatrix}
             \]
-    </p>
-
-    <p>La clée est de savoir relier le PDF au point P</p>
-    <p>
-        \[
-            \vec a = \begin{pmatrix}
-            \ddot{x}(t) \\
-            \ddot{y}(t) \\
-            \ddot{z}(t)
-            \end{pmatrix}
-        \]
-    </p>
-    <p> On a obtenu l'équation différentielle qui régit le mouvement:</p>
+                </p>
+                <p> On a obtenu l'équation différentielle qui régit le mouvement:</p>
+        </div>
     <p>
         \[
             \sum \vec F = \begin{pmatrix}
@@ -53,14 +55,16 @@
     <p>Prenons donc un exemple pour aller au bout du calcul. La démarche à suivre est très générale et c'est cette méthode qu'il faut appliquer lorsque l'on demande les équations horaires.</p>
 
     <p class="subsection"> II) Cas de la chute libre </p>
-
-    <p> On se place donc dans le reférentiel terrestre supposé Galliléen, et on lache depuis une hauteur \(H_{0}\) sans vitesse une balle sur laquelle on néglige tout autre effet que l'action de la pesanteur.
-        On munit l'espace d'un repère cartésien 3D, chaque point est donc repéré par les coordonnées \( (x,y,z) \). On utilise également la base cartésienne de vecteur \( (e_{x},e_{y},e_{z}) \).
-        Le repère est orienté de sorte à ce que la force de pesanteur, sur Terre simplement le poids, soit selon \( -e_{z} \). 
-        Le poids s'écrit donc \( \vec P = m /vec g = - m g e_{z}  \)
-    </p>
-    <p>On assimile le système à un point de masse m. 
-         Le PFD s'applique et en utilisant la partie précédente on obtient: </p>
+<div class="case-pp-core">
+    
+        <p> On se place donc dans le reférentiel terrestre supposé Galliléen, et on lache depuis une hauteur \(H_{0}\) sans vitesse une balle sur laquelle on néglige tout autre effet que l'action de la pesanteur.
+            On munit l'espace d'un repère cartésien 3D, chaque point est donc repéré par les coordonnées \( (x,y,z) \). On utilise également la base cartésienne de vecteur \( (e_{x},e_{y},e_{z}) \).
+            Le repère est orienté de sorte à ce que la force de pesanteur, sur Terre simplement le poids, soit selon \( -e_{z} \).
+            Le poids s'écrit donc \( \vec P = m \vec g = - m g e_{z}  \)
+        </p>
+        <p>On assimile le système à un point de masse m.
+             Le PFD s'applique et en utilisant la partie précédente on obtient: </p>
+</div>
     <p>\[
         \begin{pmatrix}
                     0 \\
@@ -73,72 +77,74 @@
                     \end{pmatrix}
                     
     \]</p>
-
-    <p>C'est bien parce que j'ai exprimé dans la base cartésienne à la fois la force (le poids) ET l'accelération (dérivées seconde des coordonnées) que je peux écrire cette égalité entre vecteurs.</p>
+<div class="case-pp-core">
     
-    <p> On doit résoudre trois équations différentielles correspondantes à chacune des lignes de ce que j'ai écrites précedemment.</p>
-
-        <p> Résoudre une équation différentielle, c'est trouver la ou les fonctions qui vérifie l'équation en question.
-            En physique, avec les conditions initiales on aura généralement une solution unique. 
-        </p>
-        <p>Pour résoudre la première et seconde équation différentielle, on cherche:
-            \( x(t)\) telle que \( \ddot{x}(t)=0 \)
-            Lorsque, comme ici, on réussit à avoir d'un coté une dérivée de x et de l'autre une fonction de t uniquement (en l'occurence \(f(t)=0) \), il suffit d'intégrer.
-        </p>
-
-        <p>Intégrer une fonction \(h\) c'est chercher quelle fonction \(H\) est égale à \(h \) lorsque elle est dérivée. Cette fonction \(H\) est appelée primitive de la fonction \(h \).
-            Concrétement on "fait l'inverse d'une dérivation".
-            <p>
-                Pour une fonction dérivée comme \(\dot{x}(t) \), la primitive est très simple à trouver, c'est simplement \(\dot{x}(t) +C \) où \(C\) est une constante. (Attention à ne pas l'oublier!).
-                <p>Ici on Intégre une première fois chaque membre de l'équation: \( \int \ddot{x}(t) dt = \int 0 dt \)</p>
-
+        <p>C'est bien parce que j'ai exprimé dans la base cartésienne à la fois la force (le poids) ET l'accelération (dérivées seconde des coordonnées) que je peux écrire cette égalité entre vecteurs.</p>
+    
+        <p> On doit résoudre trois équations différentielles correspondantes à chacune des lignes de ce que j'ai écrites précedemment.</p>
+    
+            <p> Résoudre une équation différentielle, c'est trouver la ou les fonctions qui vérifie l'équation en question.
+                En physique, avec les conditions initiales on aura généralement une solution unique.
+            </p>
+            <p>Pour résoudre la première et seconde équation différentielle, on cherche:
+                \( x(t)\) telle que \( \ddot{x}(t)=0 \)
+                Lorsque, comme ici, on réussit à avoir d'un coté une dérivée de x et de l'autre une fonction de t uniquement (en l'occurence \(f(t)=0) \), il suffit d'intégrer.
+            </p>
+    
+            <p class="important">Intégrer une fonction \(h\) c'est chercher quelle fonction \(H\) est égale à \(h \) lorsque elle est dérivée. Cette fonction \(H\) est appelée primitive de la fonction \(h \).
+                Concrétement on "fait l'inverse d'une dérivation".
                 <p>
-                    N'importe quelle fonction constante égale à \(C' \) est une primitive de la fonction nulle.
-                    On obtient donc: \(\dot{x}(t) + C = 0 + C' \)
+                    Pour une fonction dérivée comme \(\dot{x}(t) \), la primitive est très simple à trouver, c'est simplement \(\dot{x}(t) +C \) où \(C\) est une constante. (Attention à ne pas l'oublier!).
+                    <p>Ici on Intégre une première fois chaque membre de l'équation: \( \int \ddot{x}(t) dt = \int 0 dt \)</p>
+    
+                    <p>
+                        N'importe quelle fonction constante égale à \(C' \) est une primitive de la fonction nulle.
+                        On obtient donc: \(\dot{x}(t) + C = 0 + C' \)
+                    </p>
                 </p>
-            </p>
-            <p> Soit \(\dot{x}(t) = C'' \)</p>
-
-            <p>
-                C'est le moment d'utiliser les conditions initiales pour déterminer les constantes: On dit "on lache sans vitesse".
-                Il faut traduire: à \(t=0 \) on a:
-                                \(\dot{x}(t=0)=0   \)
-                            et  \(\dot{y}(t=0)=0  \)
-            </p>
-            <p>On déduit alors: \(C'' = 0\) </p>
-            <p>Puis \( \dot{x}(t) = 0 \)</p>
-
-            <p>On refait une intégration: la primitive de \(\dot{x}(t)\) est \( x(t)\ + C \) avec \(C \in \mathbb{R} \). Et une primitive de la fonction nulle est une fonction constante</p>
-       
-            <p>On obtient: \(x(t) = K, K \in \mathbb{R} \)</p>
-            <p>On utilise alors à nouveau les conditions initiales: \(x(t=0) = 0 \) car on est libre de définir l'origine de l'axe x comme le point où la balle est initialement. </p>
-            <p>Finalement: \(x(t) = 0 \)</p>
-
-            <p>Le même raisonnement conduit à \(y(t) = 0\)</p>
-
-            <p>Passons alors à la coordonnée z:</p>
-
-            <p>\( \ddot{z}(t) = -g \)</p>
-
-            <p>
-                On doit intégrer une constante cette fois ci:
-                La fonction \(\dot{z}(t) = -g t + B, B \in \mathbb{R} \) est une primitive de la fonction constante égale à \( -g\). En effet, en dérivant \( \dot{z}\) on obtient bien \(-g\).
-            </p>
-
-            <p>
-                Les conditions initiales de vitesse nulle permettent de dire que:
-                \(\dot{z}(t=0) = -g*0 + B = 0 \)
-            </p>
-
-            <p>Donc \(B=0\) et \(\dot{z}(t) = -gt \)</p>
-       
-            <p>
-                On intégre à nouveau: \(z(t) = -g\frac{t^2}{2} + A , A \in \mathbb{R}\). (Dériver l'équation pour s'en convaincre).
-                On utilise à nouveau les conditions initiales. A \(t=0\), on a \( z(t=0) = H_{0} \)
-            </p>
-
-            <p> Ce qui permet de trouver: \(-g\frac{0^2}{2} + A = A = H_{0} \) </p>
-            Et enfin, \(z(t) = H_{0} - g\frac{t^2}{2} \)
+                <p> Soit \(\dot{x}(t) = C'' \)</p>
+    
+                <p>
+                    C'est le moment d'utiliser les conditions initiales pour déterminer les constantes: On dit "on lache sans vitesse".
+                    Il faut traduire: à \(t=0 \) on a:
+                                    \(\dot{x}(t=0)=0   \)
+                                et  \(\dot{y}(t=0)=0  \)
+                </p>
+                <p>On déduit alors: \(C'' = 0\) </p>
+                <p>Puis \( \dot{x}(t) = 0 \)</p>
+    
+                <p>On refait une intégration: la primitive de \(\dot{x}(t)\) est \( x(t)\ + C \) avec \(C \in \mathbb{R} \). Et une primitive de la fonction nulle est une fonction constante</p>
+    
+                <p>On obtient: \(x(t) = K, K \in \mathbb{R} \)</p>
+                <p>On utilise alors à nouveau les conditions initiales: \(x(t=0) = 0 \) car on est libre de définir l'origine de l'axe x comme le point où la balle est initialement. </p>
+                <p>Finalement: \(x(t) = 0 \)</p>
+    
+                <p>Le même raisonnement conduit à \(y(t) = 0\)</p>
+    
+                <p>Passons alors à la coordonnée z:</p>
+    
+                <p>\( \ddot{z}(t) = -g \)</p>
+    
+                <p>
+                    On doit intégrer une constante cette fois ci:
+                    La fonction \(\dot{z}(t) = -g t + B, B \in \mathbb{R} \) est une primitive de la fonction constante égale à \( -g\). En effet, en dérivant \( \dot{z}\) on obtient bien \(-g\).
+                </p>
+    
+                <p>
+                    Les conditions initiales de vitesse nulle permettent de dire que:
+                    \(\dot{z}(t=0) = -g*0 + B = 0 \)
+                </p>
+    
+                <p>Donc \(B=0\) et \(\dot{z}(t) = -gt \)</p>
+    
+                <p>
+                    On intégre à nouveau: \(z(t) = -g\frac{t^2}{2} + A , A \in \mathbb{R}\). (Dériver l'équation pour s'en convaincre).
+                    On utilise à nouveau les conditions initiales. A \(t=0\), on a \( z(t=0) = H_{0} \)
+                </p>
+    
+                <p> Ce qui permet de trouver: \(-g\frac{0^2}{2} + A = A = H_{0} \) </p>
+                Et enfin, \(z(t) = H_{0} - g\frac{t^2}{2} \)
+</div>
 
             <p>On conclu alors sur les équations horaires de la chute libre:</p>
 
