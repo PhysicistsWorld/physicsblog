@@ -42,14 +42,14 @@
   grid-column: 3;
   grid-row: 1;
   max-height: 100px;}
-.case-2 { background-color: #FFD1BA;  
+.case-2 { background-color:dodgerblue;  
   justify-content: center;
   text-align: center;
   grid-column-start: 1; /* Commence à la 1ère colonne */
   grid-column-end: 3;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
   grid-row-start: 1;    /* Commence à la 1ère ligne */
   grid-row-end: 3;  }
-.case-3 { background-color: #FFABAB; 
+.case-3 { background-color:firebrick ;  
   text-align: center;
   grid-column-start: 4; /* Commence à la 1ère colonne */
   grid-column-end: 6;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
@@ -59,8 +59,16 @@
   grid-column: 3;
   grid-row: 2;
   text-align: center;}
-.case-5 { background-color: #FF677D; }
-.case-6 { background-color: #D4A5A5; }
+.case-5 { 
+  grid-column: 3;
+  grid-row: 3;
+  text-align: center;
+ }
+.case-IMG-gen-1{ 
+  grid-column-start: 2; /* Commence à la 1ère colonne */
+  grid-column-end: 5;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
+  grid-row-start: 2;    /* Commence à la 1ère ligne */
+  grid-row-end: 3;  }
 .case-7 { background-color: #392F5A; color: #fff; }
 .case-8 { background-color: #31A2AC; color: #fff; }
 .case-9 { background-color: #61C0BF; color: #fff; }
