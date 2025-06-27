@@ -10,7 +10,7 @@
 
   
   .body{
-    background-color: #31A2AC;
+    background-color: white;
     margin: 0;
     padding: 0;
   }
@@ -41,14 +41,18 @@
   justify-content: center; 
   grid-column: 3;
   grid-row: 1;
-  max-height: 100px;}
+  max-height: 100px;
+  font-family:'Times New Roman', Times, serif;
+}
 .case-2 { background-color:dodgerblue;  
   justify-content: center;
   text-align: center;
   grid-column-start: 1; /* Commence à la 1ère colonne */
   grid-column-end: 3;   /* Finit à la 3ème colonne (occupe 2 colonnes) */
   grid-row-start: 1;    /* Commence à la 1ère ligne */
-  grid-row-end: 3;  }
+  grid-row-end: 3;  
+  font-family:'Times New Roman', Times, serif;
+}
 .case-3 { background-color:firebrick ;  
   text-align: center;
   grid-column-start: 4; /* Commence à la 1ère colonne */
@@ -63,6 +67,14 @@
   grid-column: 3;
   grid-row: 3;
   text-align: center;
+  font-family:'Times New Roman', Times, serif;
+ }
+
+ .case-6 { 
+  grid-column: 3;
+  grid-row: 4;
+  text-align: center;
+  
  }
 .case-IMG-gen-1{ 
   grid-column-start: 2; /* Commence à la 1ère colonne */
